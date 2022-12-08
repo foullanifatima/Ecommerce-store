@@ -1,0 +1,42 @@
+$main-white: #fff;
+$main-black: #000;
+$primary-color: #26b;
+$text-color: #666;
+$grey-color: #999;
+$border-color: #eee;
+$line-color: #e6e6e8;
+$brown-color: #d26e4b;
+$section-bg: #f6f7f9;
+$footer-bg: #222;
+
+// adding mixins
+
+@mixin atSmallestScreen {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin atSmScreen {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin atMdScreen {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin atLgScreen {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin atXLScreen {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}

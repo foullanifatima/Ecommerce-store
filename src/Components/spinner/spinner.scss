@@ -1,0 +1,17 @@
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  height: 100vh;
+  animation: loader 1.25s infinite;
+}
+
+@keyframes loader {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 180deg;
+  }
+}

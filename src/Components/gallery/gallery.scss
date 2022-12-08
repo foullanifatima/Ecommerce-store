@@ -1,0 +1,7 @@
+.gallery {
+  height: 400px;
+  width: auto;
+  &:focus {
+    outline: none;
+  }
+}

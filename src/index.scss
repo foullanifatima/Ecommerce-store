@@ -1,0 +1,104 @@
+@import './assets/_mixins&variables';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.sign-in-and-sign-up {
+  width: 850px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.collection-container > .collection-item {
+  width: 100% !important;
+}
+.title-collection {
+  font-size: 38px;
+  margin-bottom: 25px;
+  text-align: center;
+  padding: 20px 80px;
+}
+
+.homepage {
+  padding: 2rem 4rem;
+}
+
+.checkout-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .checkout-header {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid darkgrey;
+    @include atSmScreen {
+      display: none !important;
+    }
+
+    .header-block {
+      text-transform: capitalize;
+      font-size: 1rem;
+    }
+  }
+
+  .total {
+    margin-top: 30px;
+    margin-left: auto;
+    font-size: 2rem;
+  }
+}
+
+.container::before {
+  content: none !important;
+}
+
+.singleProduct {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__title {
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__brand {
+    margin-bottom: 1rem;
+    &--span {
+      font-weight: 600;
+      margin-right: 0.8rem;
+    }
+  }
+
+  &__price {
+    font-size: 2rem;
+    color: $primary-color;
+  }
+
+  &__desc {
+    color: $text-color;
+    font-size: 0.9rem;
+    margin: 1rem 0 1.5rem 0;
+    width: 80%;
+  }
+}
