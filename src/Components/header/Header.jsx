@@ -46,7 +46,7 @@ function Header({ currentUser, hidden, itemsCount }) {
               </li>
               {currentUser ? (
                 <div
-                  className="option"
+                  style={{ cursor: 'pointer' }}
                   onClick={() => {
                     auth.signOut()
                   }}

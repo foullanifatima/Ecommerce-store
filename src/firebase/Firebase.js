@@ -1,5 +1,10 @@
 import firebase from 'firebase/compat/app'
-import { GoogleAuthProvider, signInWithPopup, getAuth } from 'firebase/auth'
+import {
+  GoogleAuthProvider,
+  signInWithPopup,
+  signInWithRedirect,
+  getAuth,
+} from 'firebase/auth'
 import 'firebase/compat/firestore'
 import { getRedirectResult } from 'firebase/auth'
 
@@ -37,5 +42,5 @@ var firebaseApp = firebase.initializeApp(config)
 export const auth = getAuth(firebaseApp)
 var db = firebaseApp.firestore()
 const provider = new GoogleAuthProvider()
-export const signInWithGoogle = () => getRedirectResult(auth)
+export const signInWithGoogle = () => signInWithRedirect(auth, provider)
 export default db
