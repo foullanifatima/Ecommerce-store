@@ -14,6 +14,7 @@ const SingleProduct = ({ singleProduct }) => {
   const id = useParams().id
   const dispatch = useDispatch()
   useEffect(() => {
+    window.scrollTo(0, 0)
     dispatch(GetProductById(id))
   }, [id])
 

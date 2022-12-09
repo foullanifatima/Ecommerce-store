@@ -6,8 +6,12 @@ import {
   selectCartItemsTotal,
 } from '../redux/cart/cart.selector'
 import { createStructuredSelector } from 'reselect'
+import { useEffect } from 'react'
 
 const CheckOut = ({ cartItems, total }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="checkout-page container">
       <div className="checkout-header">

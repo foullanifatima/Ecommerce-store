@@ -1,8 +1,12 @@
 import React from 'react'
 import SignIn from '../Components/signIn/SignIn'
 import SignUp from '../Components/signUp/SignUp'
+import { useEffect } from 'react'
 
 function SignIn_SignUp() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="container mt-5">
       <div className="row  g-5 ">

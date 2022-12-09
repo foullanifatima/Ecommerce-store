@@ -10,6 +10,7 @@ import Spinner from '../Components/spinner/Spinner'
 function ShopPage({ collection }) {
   const dispatch = useDispatch()
   useEffect(() => {
+    window.scrollTo(0, 0)
     dispatch(getProducts())
   }, [dispatch])
   return collection ? (
