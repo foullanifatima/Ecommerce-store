@@ -1,6 +1,7 @@
 import firebase from 'firebase/compat/app'
 import { GoogleAuthProvider, signInWithPopup, getAuth } from 'firebase/auth'
 import 'firebase/compat/firestore'
+import { getRedirectResult } from 'firebase/auth'
 
 const config = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -36,5 +37,5 @@ var firebaseApp = firebase.initializeApp(config)
 export const auth = getAuth(firebaseApp)
 var db = firebaseApp.firestore()
 const provider = new GoogleAuthProvider()
-export const signInWithGoogle = () => signInWithPopup(auth, provider)
+export const signInWithGoogle = () => getRedirectResult(auth)
 export default db
