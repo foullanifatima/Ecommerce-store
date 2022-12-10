@@ -19,52 +19,41 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## `This is an e-commerce project, a functional, responsive website created with React, Redux, and Firebase.`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### React & Redux:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Use Redux for state management.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create reusable components.
 
-### `npm run eject`
+Routing with React Router.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Redux Thunk for asynchronous actions like bringing Data from API to the App.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Redux Persist solves the problem of losing data when refreshing the page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Firebase & Firestore
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Sign-In workflow with Firebase (email, password).
 
-## Learn More
+Google Sign-in Authentification.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Storing User Data In Firestore.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Goals:
 
-### Code Splitting
+Retrieve data asynchronously from API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Display different collections, products and single product page
 
-### Analyzing the Bundle Size
+Add product to cart, change the quantity and delete from cart.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+![screencapture-serene-otter-e68728-netlify-app-2022-12-10-15_40_15](https://user-images.githubusercontent.com/59576285/206861368-d696530e-1f19-41de-9a75-0a0dae0cb620.png)
+![screencapture-serene-otter-e68728-netlify-app-2022-12-10-15_41_05](https://user-images.githubusercontent.com/59576285/206861370-3a550f7b-8de9-4b49-9c64-9ca772777371.png)
+![screencapture-serene-otter-e68728-netlify-app-checkout-2022-12-10-15_44_28](https://user-images.githubusercontent.com/59576285/206861371-9aa335e0-712b-46a9-8f84-f3d9b97daca0.png)
+![screencapture-serene-otter-e68728-netlify-app-products-13-2022-12-10-15_42_58](https://user-images.githubusercontent.com/59576285/206861372-87c7a3fb-fa67-4fd5-ae8c-d677225c2e9d.png)
+![screencapture-serene-otter-e68728-netlify-app-products-13-2022-12-10-15_43_17](https://user-images.githubusercontent.com/59576285/206861373-a32221d3-fb75-44e9-9b03-3cde4ac80609.png)
+![screencapture-serene-otter-e68728-netlify-app-signin-2022-12-10-15_43_37](https://user-images.githubusercontent.com/59576285/206861375-f8a3edf9-ae7d-42cc-87d3-79cac8f1c1df.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
