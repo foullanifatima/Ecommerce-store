@@ -25,7 +25,11 @@ function Header({ currentUser, hidden, itemsCount }) {
             <div className="site-header__logo-container">
               {/* navbar logo */}
               <Link to="/">
-                <img src={Logo} alt="logo" className="fluid-img" />
+                <img
+                  src="https://img.icons8.com/external-parzival-1997-detailed-outline-parzival-1997/64/null/external-ecommerce-digital-asset-and-intangible-product-parzival-1997-detailed-outline-parzival-1997.png"
+                  alt="logo"
+                  className="fluid-img"
+                />
               </Link>
             </div>
             {/* navbar links */}
