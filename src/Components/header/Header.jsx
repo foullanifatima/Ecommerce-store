@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+// import Logo from '../../assets/logo.png'
 import Logo from '../../assets/logo.png'
 import './header.scss'
 import { auth } from '../../firebase/Firebase'
@@ -25,11 +26,7 @@ function Header({ currentUser, hidden, itemsCount }) {
             <div className="site-header__logo-container">
               {/* navbar logo */}
               <Link to="/">
-                <img
-                  src="https://img.icons8.com/external-parzival-1997-detailed-outline-parzival-1997/64/null/external-ecommerce-digital-asset-and-intangible-product-parzival-1997-detailed-outline-parzival-1997.png"
-                  alt="logo"
-                  className="fluid-img"
-                />
+                <img src={Logo} alt="logo" className="fluid-img" />
               </Link>
             </div>
             {/* navbar links */}

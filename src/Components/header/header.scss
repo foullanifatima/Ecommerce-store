@@ -30,6 +30,9 @@ ul {
 
   &__logo-container {
     display: block;
+    img {
+      width: 100px;
+    }
   }
   &__show-sidebar {
     position: absolute;
