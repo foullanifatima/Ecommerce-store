@@ -9,13 +9,13 @@ import 'firebase/compat/firestore'
 import { getRedirectResult } from 'firebase/auth'
 
 const config = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
+  apiKey: 'AIzaSyDRW40r_y82R6oxI1So1pHHPsu0BzhHVW8',
+  authDomain: 'learning-firebase-b4bed.firebaseapp.com',
+  projectId: 'learning-firebase-b4bed',
+  storageBucket: 'learning-firebase-b4bed.appspot.com',
+  messagingSenderId: '355460846354',
+  appId: '1:355460846354:web:a5472948c25fcaa9b819cb',
+  measurementId: 'G-36FCK1PPRV',
 }
 
 export const createUserProfileDocument = async (userAuth, additionnalData) => {
